@@ -19,7 +19,7 @@ public class ContentProvider implements ITreeContentProvider {
     public void inputChanged(Viewer viewer, Object oldInput, Object newInput) {
         // Respond to input change if necessary
         System.out.println("ContentProvider.inputChanged()...");
-        System.out.println("Old input: " + oldInput);
+//        System.out.println("Old input: " + oldInput);
         System.out.println("New input: " + newInput);
     }
 

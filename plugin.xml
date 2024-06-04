@@ -41,19 +41,6 @@
       </view>
    </extension>
    <extension
-         point="org.eclipse.ui.perspectiveExtensions">
-      <perspectiveExtension
-            targetID="learn1.perspective">
-         <view
-               id="learn1.views.navigator"
-               minimized="false"
-               relationship="left"
-               standalone="true"
-               visible="true">
-         </view>
-      </perspectiveExtension>
-   </extension>
-   <extension
          point="org.eclipse.ui.menus">
       <menuContribution
             locationURI="menu:org.eclipse.ui.main.menu">

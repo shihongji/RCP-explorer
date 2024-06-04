@@ -4,6 +4,7 @@ import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jface.viewers.DoubleClickEvent;
@@ -28,7 +29,8 @@ public class Navigator extends CommonNavigator {
 	protected CommonViewer createCommonViewer(Composite parent) {
 		CommonViewer viewer = super.createCommonViewer(parent);
 		// Customize the viewer if necessary
-		viewer.setInput(ResourcesPlugin.getWorkspace().getRoot());
+		IWorkspaceRoot obj = ResourcesPlugin.getWorkspace().getRoot();
+		viewer.setInput(obj);
 
 		// Add selectionChangeListener
 		viewer.addSelectionChangedListener(new ISelectionChangedListener() {
